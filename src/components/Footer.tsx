@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-gray-900 text-white py-16">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          {/* Advertising Optimization */}
+
           <div className="space-y-4">
             <h3 className="text-lg font-bold mb-4">Advertising Optimization</h3>
             <ul className="space-y-2">
@@ -19,12 +19,12 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Pricing */}
+   
           <div className="space-y-4">
             <h3 className="text-lg font-bold mb-4">Pricing</h3>
           </div>
 
-          {/* Resources */}
+       
           <div className="space-y-4">
             <h3 className="text-lg font-bold mb-4">Resources</h3>
             <ul className="space-y-2">
@@ -37,7 +37,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Company */}
+
           <div className="space-y-4">
             <h3 className="text-lg font-bold mb-4">Company</h3>
             <ul className="space-y-2">
@@ -48,10 +48,9 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Section */}
+       
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-6 lg:space-y-0">
-            {/* Logo and Badges */}
             <div className="flex items-center space-x-8">
               <div className="flex items-center space-x-2">
                 <div className="w-8 h-8 bg-gradient-primary rounded-md flex items-center justify-center">
@@ -60,7 +59,7 @@ const Footer = () => {
                 <span className="text-2xl font-bold">teikametrics</span>
               </div>
               
-              {/* Award Badges */}
+
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center">
                   <span className="text-xs font-bold">BEST<br/>PLACES<br/>TO WORK</span>
@@ -77,7 +76,6 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Social Links */}
             <div className="flex items-center space-x-4">
               <Facebook className="w-6 h-6 text-gray-400 hover:text-white cursor-pointer transition-colors" />
               <Twitter className="w-6 h-6 text-gray-400 hover:text-white cursor-pointer transition-colors" />
@@ -87,7 +85,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Copyright and Links */}
+
           <div className="flex flex-col lg:flex-row justify-between items-center mt-8 space-y-4 lg:space-y-0">
             <p className="text-gray-400 text-sm">
               © 2025 Teikametrics, Inc. All Rights Reserved.

@@ -13,7 +13,7 @@ const HeroSection = () => {
   ];
 
   const floatingIcons = [
-    { Icon: BarChart, position: 'top-20 left-20', delay: '0s' },
+    { Icon: BarChart, position: 'top-20 right-20', delay: '0s' },
     { Icon: Users, position: 'top-32 right-32', delay: '0.5s' },
     { Icon: ShoppingCart, position: 'bottom-40 left-32', delay: '1s' },
     { Icon: TrendingUp, position: 'bottom-20 right-20', delay: '1.5s' },
@@ -30,7 +30,6 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen bg-gradient-purple overflow-hidden">
-      {/* Floating Icons */}
       {floatingIcons.map(({ Icon, position, delay }, index) => (
         <div
           key={index}
@@ -45,7 +44,7 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-6 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
+       
           <div className="space-y-8">
             <div className="space-y-6">
               <h1 className="text-5xl lg:text-6xl font-bold text-foreground leading-tight">
@@ -67,7 +66,7 @@ const HeroSection = () => {
               Request a Demo
             </Button>
 
-            {/* Brand Logos */}
+         
             <div className="pt-8">
               <p className="text-sm text-muted-foreground mb-4">Current AI-enabled Marketplaces</p>
               <div className="flex items-center space-x-8">
@@ -78,10 +77,9 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right Content - Animated Dashboard */}
           <div className="relative">
             <div className="relative z-10 space-y-6">
-              {/* Main Dashboard Card */}
+        
               <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl animate-fade-in-up">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center space-x-2">
@@ -100,7 +98,6 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              {/* Floating Product Cards */}
               <div className="relative">
                 {productImages.map((product, index) => (
                   <div
@@ -126,7 +123,7 @@ const HeroSection = () => {
                 ))}
               </div>
 
-              {/* Additional UI Elements */}
+  
               <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 shadow-lg animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
                 <div className="text-sm font-medium mb-2">Optimize 4 listings</div>
                 <div className="space-y-2">

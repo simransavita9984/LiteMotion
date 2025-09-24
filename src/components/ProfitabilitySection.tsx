@@ -20,14 +20,13 @@ const ProfitabilitySection = () => {
          
               <div className="absolute inset-0 rounded-full border-4 border-dashed border-purple-300 "></div>
               
-              {/* Inner circle with icon */}
+           
               <div className="absolute inset-8 bg-gradient-primary rounded-full flex items-center justify-center shadow-2xl">
                 <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center">
                   <Zap className="w-10 h-10 text-purple-600" />
                 </div>
               </div>
               
-              {/* Floating dots */}
               {[...Array(8)].map((_, i) => (
                 <div
                   key={i}
@@ -43,7 +42,6 @@ const ProfitabilitySection = () => {
             </div>
           </div>
 
-          {/* Right Side - Content */}
           <div className="space-y-8">
             <h2 className="text-5xl font-bold text-foreground leading-tight">
               Next-Generation AI to{' '}

@@ -60,13 +60,12 @@ const FeaturesSection = () => {
           {features.map((feature, index) => (
             <div key={index} className="group">
               <div className="space-y-6">
-                {/* Animated Icon */}
+      
                 <div className="relative">
                   <div className={`w-16 h-16 ${feature.iconBg} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
                     <feature.icon className={`w-8 h-8 ${feature.iconColor}`} />
                   </div>
                   
-                  {/* Floating decorative elements */}
                   <div className="absolute -top-2 -right-2 w-6 h-6 bg-purple-200 rounded-full animate-float opacity-60"></div>
                   <div className="absolute -bottom-1 -left-1 w-4 h-4 bg-blue-200 rounded-full animate-float opacity-40" style={{ animationDelay: '0.5s' }}></div>
                 </div>

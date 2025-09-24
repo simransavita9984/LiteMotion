@@ -23,21 +23,18 @@ const ProductShowcase = () => {
     <section className="py-20 bg-gradient-light">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left Side - Rotating Product Display */}
           <div className="relative">
             <div className="relative w-full max-w-md mx-auto">
-              {/* Dotted Circle Animation */}
               <div className="absolute inset-0 rounded-full border-4 border-dashed border-purple-300 animate-spin-slow"></div>
-              
-              {/* Central Product Display */}
+               
               <div className="relative z-10 bg-white rounded-3xl shadow-2xl p-8 m-8">
                 <div className="text-center space-y-6">
-                  {/* Product Image Placeholder */}
+               
                   <div className="w-32 h-32 mx-auto bg-gradient-primary rounded-2xl flex items-center justify-center animate-pulse-glow">
                     <div className="w-20 h-20 bg-white/30 rounded-xl"></div>
                   </div>
                   
-                  {/* Product Info */}
+          
                   <div>
                     <h3 className="text-xl font-bold text-foreground">
                       {productImages[currentImage].name}
@@ -47,7 +44,7 @@ const ProductShowcase = () => {
                     </p>
                   </div>
                   
-                  {/* Amazon/Walmart Badges */}
+                  
                   <div className="flex justify-center space-x-4">
                     <div className="px-3 py-1 bg-orange-100 text-orange-600 rounded-full text-sm font-medium">
                       Amazon
@@ -58,8 +55,6 @@ const ProductShowcase = () => {
                   </div>
                 </div>
               </div>
-
-              {/* Floating Analytics Cards */}
               <div className="absolute top-0 left-0 bg-white rounded-xl shadow-lg p-4 animate-fade-in-up">
                 <div className="flex items-center space-x-2">
                   <TrendingUp className="w-5 h-5 text-green-500" />
@@ -82,7 +77,7 @@ const ProductShowcase = () => {
             </div>
           </div>
 
-          {/* Right Side - Content */}
+       
           <div className="space-y-8">
             <h2 className="text-5xl font-bold text-foreground leading-tight">
               Empower Your Business with{' '}

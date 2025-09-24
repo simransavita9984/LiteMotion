@@ -27,7 +27,6 @@ const InventorySection = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left Side - Content */}
           <div className="space-y-8">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-12 h-12 bg-purple-100 rounded-2xl flex items-center justify-center">
@@ -50,15 +49,13 @@ const InventorySection = () => {
             </Button>
           </div>
 
-          {/* Right Side - Animated Inventory Display */}
+         
           <div className="relative">
             <div className="flex justify-center items-center">
-              {/* Pie Chart with Data */}
               <div className="relative w-80 h-80">
-                {/* Outer Dotted Circle */}
                 <div className={`absolute inset-0 rounded-full border-4 border-dashed border-purple-300 transition-transform duration-1000 ${spinning ? 'animate-spin' : ''}`}></div>
                 
-                {/* Inner Pie Chart */}
+             
                 <div className="absolute inset-8 rounded-full bg-gradient-to-br from-blue-400 via-purple-400 to-pink-400 shadow-2xl flex items-center justify-center">
                   <div className="w-32 h-32 bg-white rounded-full flex flex-col items-center justify-center">
                     <Package className="w-8 h-8 text-purple-600 mb-2" />
@@ -69,7 +66,7 @@ const InventorySection = () => {
                   </div>
                 </div>
 
-                {/* Data Points */}
+         
                 <div className="absolute top-4 right-4 bg-white rounded-lg shadow-lg p-3 animate-fade-in-up">
                   <div className="text-center">
                     <div className="text-2xl font-bold text-foreground">71</div>
@@ -88,16 +85,16 @@ const InventorySection = () => {
           </div>
         </div>
 
-        {/* Bottom Section - Product Showcase */}
+   
         <div className="mt-20 grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left Side - Product with Spinning Animation */}
+        
           <div className="relative">
             <div className="flex justify-center">
               <div className="relative w-96 h-96">
-                {/* Dotted Circle */}
+              
                 <div className={`absolute inset-0 rounded-full border-4 border-dashed border-purple-300 transition-transform duration-1000 ${spinning ? 'animate-spin' : ''}`}></div>
                 
-                {/* Product Display */}
+        
                 <div className="absolute inset-12 bg-white rounded-3xl shadow-2xl flex flex-col items-center justify-center p-6">
                   <div className="w-32 h-24 bg-gray-300 rounded-2xl mb-4 flex items-center justify-center">
                     {products[currentProduct].image === 'shoe' && <div className="w-20 h-12 bg-gray-600 rounded-xl"></div>}
@@ -121,18 +118,18 @@ const InventorySection = () => {
                   </div>
                 </div>
 
-                {/* Amazon Badge */}
+             
                 <div className="absolute bottom-0 left-0 bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-bold">
                   amazon
                 </div>
 
-                {/* Walmart Badge */}
+          
                 <div className="absolute bottom-8 right-0 bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold flex items-center space-x-1">
                   <span>Walmart</span>
                   <span className="text-yellow-300">*</span>
                 </div>
 
-                {/* Expand Badge */}
+            
                 <div className="absolute top-0 right-0 bg-white shadow-lg rounded-full p-2">
                   <div className="text-xs text-center">
                     <div className="font-bold text-pink-500">+</div>
@@ -143,7 +140,6 @@ const InventorySection = () => {
             </div>
           </div>
 
-          {/* Right Side - GenAI Content */}
           <div className="space-y-8">
             <div className="flex items-center space-x-3">
               <div className="w-12 h-12 bg-purple-100 rounded-2xl flex items-center justify-center">

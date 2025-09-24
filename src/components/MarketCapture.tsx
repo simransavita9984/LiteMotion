@@ -5,7 +5,6 @@ const MarketCapture = () => {
     <section className="py-20 bg-gradient-purple">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left Content */}
           <div className="space-y-8">
             <h2 className="text-5xl font-bold text-foreground leading-tight">
               Capture market share on the
@@ -23,10 +22,10 @@ const MarketCapture = () => {
             </p>
           </div>
 
-          {/* Right Side - Animated Circles */}
+        
           <div className="relative flex justify-center">
             <div className="relative w-96 h-96">
-              {/* Amazon Circle */}
+           
               <div className="absolute top-0 right-0 w-48 h-48 bg-gradient-to-br from-orange-300 to-orange-500 rounded-full flex flex-col items-center justify-center shadow-2xl animate-pulse-glow">
                 <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center mb-2">
                   <span className="text-white font-bold text-sm">a</span>
@@ -41,7 +40,7 @@ const MarketCapture = () => {
                 </div>
               </div>
 
-              {/* Walmart Circle */}
+          
               <div className="absolute bottom-0 left-0 w-40 h-40 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex flex-col items-center justify-center shadow-2xl animate-pulse-glow" style={{ animationDelay: '1s' }}>
                 <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center mb-2">
                   <span className="text-blue-600 font-bold text-xs">*</span>
@@ -56,7 +55,7 @@ const MarketCapture = () => {
                 </div>
               </div>
 
-              {/* Connecting Lines */}
+         
               <svg className="absolute inset-0 w-full h-full" style={{ zIndex: -1 }}>
                 <defs>
                   <pattern id="dots" patternUnits="userSpaceOnUse" width="4" height="4">
